@@ -1,9 +1,13 @@
 // №1
-let manager = 'Вася';
-let name = 'Вася';
-let currentUser = 'Вася';
-
+// let manager = 'Вася';
+// let name = 'Вася';
+// let currentUser = 'Вася';
 console.log(`Задание 1`);
+let manager, name, currentUser;
+name = 'Вася';
+manager = name;
+currentUser = manager;
+
 console.log(currentUser);
 
 // №2
@@ -43,8 +47,10 @@ console.log(false === "");
 console.log(`Задание 5`);
 const animal = {
     typeof: 'dog',
+    weight: '40',
     color: 'white',
     speed: '20',
 }
+delete animal.weight;
 
 console.log(animal);

@@ -1,40 +1,38 @@
-const data = [
-    {
-        firstName: 'Ashton',
-        lastName: 'Kutcher',
-        age: 40,
-    },
-    {
-        firstName: 'Bradley',
-        lastName: 'Pitt',
-        age: 54,
-    },
-    {
-        firstName: 'Hannah',
-        lastName: 'Dakota',
-        age: 24,
-    },
-];
-
-const  searchUser = function (lastName) {
-    for (let i = 0; i < data.length; i++) {
-
-        if (data[i].lastName.toLowerCase() === lastName.toLowerCase()){
-            return `Пользователь ${data[i].firstName} ${data[i].lastName}, возраст ${data[i].age}`;
-        }
-    }
-    return 'No results found for your request';
+// classwork
+const palindrome = str => {
+    str = str.toLowerCase();
+    return str === str.split('').reverse().join('');
 }
 
-const form = document.getElementById('searchForm');
+console.log(palindrome('шалаш'));
 
-form.addEventListener('submit', function(event) {
-    event.preventDefault();
-    const input = document.getElementById('searchData');
-    const paragraph = document.getElementById('searchResult');
+// №1
+function min(a,b) {
+    return a < b ? a : b;
+}
+console.log(min(-2, 5));
 
-    paragraph.innerText = searchUser(input.value);
-})
+function max(a,b) {
+    return a > b ? a : b;
+}
+console.log(max(-2, 5));
 
-// const f = data.find(el => el.lastName === 'Kutcher');
-// console.log(f);
+function min(a,b) {
+    if (a < b) {
+        return a;
+    } else {
+        return b;
+    }
+}
+console.log(min(-2, 5));
+
+function max(a,b) {
+    if (a > b) {
+        return a;
+    } else {
+        return b;
+    }
+}
+console.log(max(-2, 5));
+
+// №2

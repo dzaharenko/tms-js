@@ -6,7 +6,7 @@ const palindrome = str => {
 
 console.log(palindrome('шалаш'));
 
-// №1 2
+// №1
 function min(a,b) {
     return a < b ? a : b;
 }

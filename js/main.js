@@ -1,40 +1,9 @@
-const data = [
-    {
-        firstName: 'Ashton',
-        lastName: 'Kutcher',
-        age: 40,
-    },
-    {
-        firstName: 'Bradley',
-        lastName: 'Pitt',
-        age: 54,
-    },
-    {
-        firstName: 'Hannah',
-        lastName: 'Dakota',
-        age: 24,
-    },
-];
+// №1
+function sum(a) {
 
-const  searchUser = function (lastName) {
-    for (let i = 0; i < data.length; i++) {
-
-        if (data[i].lastName.toLowerCase() === lastName.toLowerCase()){
-            return `Пользователь ${data[i].firstName} ${data[i].lastName}, возраст ${data[i].age}`;
-        }
+    return function(b) {
+        return a + b;
     }
-    return 'No results found for your request';
 }
 
-const form = document.getElementById('searchForm');
-
-form.addEventListener('submit', function(event) {
-    event.preventDefault();
-    const input = document.getElementById('searchData');
-    const paragraph = document.getElementById('searchResult');
-
-    paragraph.innerText = searchUser(input.value);
-})
-
-// const f = data.find(el => el.lastName === 'Kutcher');
-// console.log(f);
+console.log(sum(5)(2));

@@ -7,6 +7,7 @@ function sum(a) {
 
 console.log(sum(5)(2));
 
+// №2
 const colors = ['magenta', 'cyan', 'firebrick', 'springgreen', 'skyblue'];
 
 const text1 = document.getElementById('text1');

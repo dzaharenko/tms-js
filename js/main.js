@@ -1,40 +1,61 @@
-const data = [
-    {
-        firstName: 'Ashton',
-        lastName: 'Kutcher',
-        age: 40,
-    },
-    {
-        firstName: 'Bradley',
-        lastName: 'Pitt',
-        age: 54,
-    },
-    {
-        firstName: 'Hannah',
-        lastName: 'Dakota',
-        age: 24,
-    },
-];
+// №1
+const text1 = document.getElementById('text1');
+const text2 = document.getElementById('text2');
+const text3 = document.getElementById('text3');
 
-const  searchUser = function (lastName) {
-    for (let i = 0; i < data.length; i++) {
+const colors = {
+    data: ['magenta', 'cyan', 'firebrick', 'springgreen', 'skyblue'],
+    [Symbol.iterator]() {
+        return this;
+    },
+    next(id) {
+        if (this.id > undefined) {
+            this.id = 0;
+        }
+        if (this.id < this.data.length) {
+            return {
+                done: false,
+                value: this.data[this.id++]
+            };
+        } else {
+            this.id = 0;
+            return {
+                done: true
+            };
 
-        if (data[i].lastName.toLowerCase() === lastName.toLowerCase()){
-            return `Пользователь ${data[i].firstName} ${data[i].lastName}, возраст ${data[i].age}`;
         }
     }
-    return 'No results found for your request';
+};
+
+
+const changeStyle = id => event => {
+    event.target.style.color = colors.next(id).value;
+};
+
+
+text1.addEventListener('click', changeStyle(Symbol()));
+text2.addEventListener('click', changeStyle(Symbol()));
+text3.addEventListener('click', changeStyle(Symbol()));
+
+// №2
+const data = [4, 56, 33, 42, 15];
+
+function bubbleSort(arr) {
+    for (let a = arr.length - 1; a > 0; a--) {
+        for (let i = 0; i < a; i++) {
+            if (arr[i] > arr[i + 1]) {
+                let temp = arr[i];
+                arr[i] = arr[i + 1];
+                arr[i + 1] = temp;
+            }
+        }
+    }
+    return arr;
 }
 
-const form = document.getElementById('searchForm');
+console.log(data);
+console.log(bubbleSort(data.slice()));
 
-form.addEventListener('submit', function(event) {
-    event.preventDefault();
-    const input = document.getElementById('searchData');
-    const paragraph = document.getElementById('searchResult');
 
-    paragraph.innerText = searchUser(input.value);
-})
 
-// const f = data.find(el => el.lastName === 'Kutcher');
-// console.log(f);
+

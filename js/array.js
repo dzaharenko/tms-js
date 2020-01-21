@@ -52,6 +52,6 @@ const products = [
 ];
 
 products.sort(function(a, b){
-    return a.price.value - b.price.value
+    return b.price.value - a.price.value
 });
 console.log(products);

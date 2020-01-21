@@ -50,3 +50,8 @@ const products = [
         imageLink: 'https://www.apple.com/v/iphone/home/af/images/overview/compare/compare_iphone_11_pro__fvqwhr4dkhiu_large.jpg'
     }
 ];
+
+products.sort(function(a, b){
+    return a.price.value - b.price.value
+});
+console.log(products);

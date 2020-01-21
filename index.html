@@ -30,7 +30,7 @@
                 </div>
                 <div class="price_info">
                     <p class="pr"><span class="dollar">$</span>2799.00</p>
-                    <button class="bt1" type="button" id="show">Add to Basket</button>
+                    <input value="Add to Basket" onclick = "dawn(this)" type="button" class="bt1" id="demo" data-price="2799.00">
                 </div>
             </div>
         </div>
@@ -45,7 +45,7 @@
                 </div>
                 <div class="price_info">
                     <p class="pr"><span class="dollar">$</span>1799.00</p>
-                    <button class="bt1">Add to Basket</button>
+                    <input value="Add to Basket" onclick="dawn(this)" type="button" class="bt1" data-price="1799.00">
                 </div>
             </div>
         </div>
@@ -60,7 +60,7 @@
                 </div>
                 <div class="price_info">
                     <p class="pr"><span class="dollar">$</span>5999.00</p>
-                    <button class="bt1">Add to Basket</button>
+                    <input value="Add to Basket" onclick="dawn(this)" type="button" class="bt1" data-price="5999.00">
                 </div>
             </div>
         </div>
@@ -75,7 +75,7 @@
             </div>
             <div class="price_info">
                 <p class="pr"><span class="dollar">$</span>1099.00</p>
-                <button class="bt1">Add to Basket</button>
+                <input value="Add to Basket" onclick="dawn(this)" type="button" class="bt1">
             </div>
         </div>
     </div>
@@ -90,12 +90,13 @@
                 </div>
                 <div class="price_info">
                     <p class="pr"><span class="dollar">$</span>1499.00</p>
-                    <button class="bt1">Add to Basket</button>
-                    <input value="Нажми меня" onclick="alert('Клик!')" type="button">
+                    <input value="Add to Basket" onclick="dawn(this)" type="button" class="bt1">
                 </div>
             </div>
         </div>
     </section>
+    <button id="sort-asc">Цена возростания</button>
+    <button id="sort-desc">Цена убывания</button>
 </div>
  <!--<div class="paragraphs">
      <p id="text1">Text 1</p>

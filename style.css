@@ -5,6 +5,8 @@
     font-size: 16px;
 }
 
+
+
 a {
     text-decoration: none;
     color: #ffffff;
@@ -17,6 +19,11 @@ p {
     color: #414141;
     font-size: 12px;
 }
+
+div {
+    line-height: 33px;
+}
+
 ._black {
     background-color: #252525;
 }
@@ -63,10 +70,6 @@ p {
     margin-right: 0;
 }
 
-.background_color {
-    background-color: #d8d8d8;
-}
-
 .card {
     box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
     transition: 0.3s;
@@ -109,7 +112,7 @@ p {
 .bt1 {
     width: 100%;
     margin-top: 5px;
-    background-color: #ff8b38;
+    background: #ff8b38;
     color: #ffffff;
     display: inline-flex;
     align-items: center;
@@ -118,4 +121,8 @@ p {
     cursor: pointer;
     height: 35px;
     border: 2px solid #ff8b38;
+}
+
+.info .hide {
+    display: none;
 }

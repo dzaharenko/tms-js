@@ -8,3 +8,7 @@ function clk() {
 }
 
 
+products.sort(function(a, b){
+    return b.price.value - a.price.value
+});
+console.log(products);

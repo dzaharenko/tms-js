@@ -55,7 +55,7 @@ class Student extends User{
 
 class Students  {
 
-    constructor (studentsData) {
+    constructor(studentsData) {
         this.studentsData = studentsData;
     }
 
@@ -68,7 +68,6 @@ class Students  {
 
         for (let i = 0; i < this.studentsData.length; i++) {
             let student = new Student(this.studentsData[i].firstName, this.studentsData[i].lastName, this.studentsData[i].courseName, this.studentsData[i].admissionYear);
-
             students.push(`${student.fullName} - ${student.courseName}, ${student.course} курс`);
         }
         return students;

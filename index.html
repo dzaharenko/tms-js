@@ -3,14 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-<form id="searchForm">
-    <label for="searchData">Поиск</label>
-    <input id='searchData' type="text" name="searchData" placeholder="Введите фамилию пользователя">
-    <button>Поиск</button>
-</form>
-<p id="searchResult"></p>
+<header class="_black">
+    <div class="container header">
+        <a href="#"><h3>The best shop</h3></a>
+        <nav>
+            <ul class="menu">
+                <li>Count</li>
+                <li>Amount</li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<div class="background_color">
+    <button id="sort-asc">Цена возрастания</button>
+    <button id="sort-desc">Цена убывания</button>
+    <section class="container _indent">
+        <div class="card">
+            <div class="wrap">
+                <div class="img">
+                    <img src="img/macbook.jpg" width="173"  height="113" alt="">
+                </div>
+                <div class="info">
+                    <h2>MacBook Pro 16-inch</h2> <br>
+                    <p>2.3GHz 8-Core Processor<br>1TB Storage<br>AMD Radeon Pro 5500M</p>
+                </div>
+                <div class="price_info">
+                    <p class="pr"><span class="dollar">$</span>2799.00</p>
+                    <input value="Add to Basket" onclick = "dawn(this)" type="button" class="bt1" id="demo" data-price="2799">
+                </div>
+            </div>
+        </div>
+        <div class="card _indent1">
+            <div class="wrap">
+                <div class="img">
+                    <img src="img/macbook.jpg" width="173"  height="113" alt="">
+                </div>
+                <div class="info">
+                    <h2>MacBook Pro 13-inch</h2> <br>
+                    <p>2.4GHz Quad-Core Processor with Turbo Boost up to 4.1GHz<br>256GB Storage<br>Touch Bar and Touch ID</p>
+                </div>
+                <div class="price_info">
+                    <p class="pr"><span class="dollar">$</span>1799.00</p>
+                    <input value="Add to Basket" onclick="dawn(this)" type="button" class="bt1" data-price="1799">
+                </div>
+            </div>
+        </div>
+        <div class="card _indent1">
+            <div class="wrap">
+                <div class="img">
+                    <img src="img/mac.jpg" width="173"  height="130" alt="">
+                </div>
+                <div class="info">
+                    <h2>Mac Pro</h2> <br>
+                    <p>3.5GHz 8‑core Intel Xeon W processor, Turbo Boost up to 4.0GHz<br>256GB Storage<br>Radeon Pro 580X with 8GB of GDDR5 memory</p>
+                </div>
+                <div class="price_info">
+                    <p class="pr"><span class="dollar">$</span>5999.00</p>
+                    <input value="Add to Basket" onclick="dawn(this)" type="button" class="bt1" data-price="5999">
+                </div>
+            </div>
+        </div>
+        <div class="card _indent1">
+        <div class="wrap">
+            <div class="img">
+                <img src="img/macbook_air.jpg" width="173"  height="102" alt="">
+            </div>
+            <div class="info">
+                <h2>MacBook Air</h2> <br>
+                <p>2-core Intel Core i5 processor<br>1TB storage<br>12 hours battery life</p>
+            </div>
+            <div class="price_info">
+                <p class="pr"><span class="dollar">$</span>1099.00</p>
+                <input value="Add to Basket" onclick="dawn(this)" type="button" class="bt1" data-price="1099">
+            </div>
+        </div>
+    </div>
+        <div class="card _indent1">
+            <div class="wrap">
+                <div class="img">
+                    <img src="img/iphone_11.jpg" width="86"  height="113" alt="">
+                </div>
+                <div class="info">
+                    <h2>iPhone 11 Pro Max</h2> <br>
+                    <p>Midnight Green<br>521GB Storage<br>20 hours of video playback</p>
+                </div>
+                <div class="price_info">
+                    <p class="pr"><span class="dollar">$</span>1499.00</p>
+                    <input value="Add to Basket" onclick="dawn(this)" type="button" class="bt1" data-price="1499">
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<script src="js/array.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

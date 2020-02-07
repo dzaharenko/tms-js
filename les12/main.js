@@ -61,9 +61,13 @@ class Students  {
 
     getInfo() {
         let students = [];
-        this.studentsData.sort((a,b) => {
-            if(a.admissionYear < b.admissionYear) return 1;
-            if(a.admissionYear > b.admissionYear) return -1;
+        this.studentsData.sort(function(a,b) {
+            let YearA = a.admissionYear;
+            let YearB = b.admissionYear;
+            if(YearA < YearB)
+                return 1;
+            if(YearA > YearB)
+                return -1;
         });
 
         for (let i = 0; i < this.studentsData.length; i++) {

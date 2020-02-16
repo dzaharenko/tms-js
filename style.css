@@ -5,6 +5,14 @@
     font-size: 16px;
 }
 
+body {
+    background-color: #d8d8d8;
+}
+
+#demo {
+    background: #ff8b38;
+}
+
 a {
     text-decoration: none;
     color: #ffffff;
@@ -12,6 +20,16 @@ a {
 h2 {
     color: #414141;
     font-size: 16px;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+h4 {
+    float: left;
+    padding: 5px 0;
+    margin-left: 20px;
 }
 p {
     color: #414141;
@@ -63,10 +81,6 @@ p {
     margin-right: 0;
 }
 
-.background_color {
-    background-color: #d8d8d8;
-}
-
 .card {
     box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
     transition: 0.3s;
@@ -78,6 +92,25 @@ p {
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
+
+.card1 {
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
+    transition: 0.3s;
+    width: 100%;
+    height: 30px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.inf {
+    display: flex;
+    margin-right: 10px;
+    float: right;
+    align-items: center;
+    padding: 5px 0;
+}
+
 .wrap {
     padding: 15px 10px;
     display: flex;
@@ -109,7 +142,7 @@ p {
 .bt1 {
     width: 100%;
     margin-top: 5px;
-    background-color: #ff8b38;
+    background: #ff8b38;
     color: #ffffff;
     display: inline-flex;
     align-items: center;

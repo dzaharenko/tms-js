@@ -29,11 +29,12 @@ h3 {
 h4 {
     float: left;
     padding: 5px 0;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 p {
     color: #414141;
     font-size: 12px;
+    margin-right: 5px;
 }
 ._black {
     background-color: #252525;
@@ -116,14 +117,20 @@ p {
     display: flex;
 }
 .img {
-    width: 19.4%;
-    justify-content: center;
+    width: 175px;
+    height: 115px;
     text-align: center;
 }
 
+.cart__image {
+    max-width: 100%;
+    max-height: 100%;
+}
+
 .info {
-    width: 48.9%;
+    width: 50.9%;
     padding: 15px 0;
+    margin-left: 15px;
 }
 
 .price_info {
@@ -151,4 +158,10 @@ p {
     cursor: pointer;
     height: 35px;
     border: 2px solid #ff8b38;
+}
+
+.search {
+    width: 400px;
+    height: 25px;
+    border-radius: 7px;
 }

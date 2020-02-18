@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="style.css"/>
-   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
 </head>
 <body>
 <header class="_black">
     <div class="container header">
         <a href="#"><h3>The best shop</h3></a>
-        <input type="text" id="search" placeholder="Поиск по сайту">
+        <input type="text" id="search" class="search" placeholder="Поиск по сайту">
         <nav>
             <ul class="menu">
                 <li id='count'>Count <span></span></li>
@@ -23,17 +22,16 @@
     <div class="card1">
         <h4>Electronics</h4>
         <div class="inf">
-            <p>Sort:</p>
+            <p>Sort by price:</p>
             <img src="img/up.png" width="20" height="20" title="Цена по возрастанию" id="sort-asc" onclick="mySort()" />
             <img src="img/down.png" width="20" height="20" title="Цена по убыванию" id="sort-desc" onclick="mySortDesc()" />
         </div>
-        <!--<button id="sort-asc" onclick="mySort()">Цена по возрастанию</button>-->
-        <!--<button id="sort-desc" onclick="mySortDesc()">Цена по убыванию</button>-->
     </div>
 </section>
-<!--<a href="#" id="changeValue">USD</a>-->
 <section class="container _indent1" id="shop">
 </section>
-<script src="js/array.js"></script>
+<script src="js/arrayS.js"></script>
+<!--<script src="js/array.js"></script>-->
+<!--<script src="js/main.js"></script>-->
 </body>
 </html>
